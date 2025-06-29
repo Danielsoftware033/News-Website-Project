@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Magazine Layout</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">Skyview News</div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="dropdown-toggle">Categories</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">World</a></li>
+              <li class="dropdown-item"><a href="#">Politics</a></li>
+              <li class="dropdown-item"><a href="#">Tech</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-container">
+        <input type="search" placeholder="Search..." class="search-bar" />
+        <button class="search-button">Go</button>
+      </div>
+    </header>
+
+    <section class="news">
+      <article class="article">
+        <img
+          src="images/luke-chesser-vCF5sB7QecM-unsplash.jpg"
+          alt="Wearable AI"
+        />
+        <div class="article-body">
+          <h3>Google Launches Wearable AI Assistant</h3>
+          <p class="meta">By Jane Doe • June 28, 2025</p>
+          <p>
+            The new smart wearable from Google offers real-time translation,
+            reminders, and gesture control on your wrist.
+          </p>
+        </div>
+      </article>
+
+      <article class="article">
+        <img
+          src="images/absolutvision-bSlHKWxxXak-unsplash.jpg"
+          alt="Data Privacy"
+        />
+        <div class="article-body">
+          <h3>Congress Debates National Data Privacy Law</h3>
+          <p class="meta">By John Smith • June 28, 2025</p>
+          <p>
+            Lawmakers are split over how tech companies can collect and store
+            personal user data across the U.S.
+          </p>
+        </div>
+      </article>
+
+      <article class="article">
+        <img
+          src="images/chris-leboutillier-TUJud0AWAPI-unsplash.jpg"
+          alt="Climate Summit"
+        />
+        <div class="article-body">
+          <h3>UN Holds Emergency Climate Summit</h3>
+          <p class="meta">By Maria Chen • June 28, 2025</p>
+          <p>
+            Global leaders met in Geneva to discuss urgent actions on rising sea
+            levels and extreme weather patterns.
+          </p>
+        </div>
+      </article>
+
+      <article class="article">
+        <img
+          src="images/david-pupaza-heNwUmEtZzo-unsplash.jpg"
+          alt="Internet Outage"
+        />
+        <div class="article-body">
+          <h3>Massive Internet Outage Disrupts Europe</h3>
+          <p class="meta">By Alex Lee • June 28, 2025</p>
+          <p>
+            A major server failure knocked out internet access across parts of
+            France, Germany, and Spain for hours.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <div class="trending">
+        <h3>Trending Stories</h3>
+        <ul class="trending-list">
+          <li><a href="#">AI Just Took Over Coding—Here's What It Means</a></li>
+          <li><a href="#">Global Heatwave Breaks Records Worldwide</a></li>
+          <li><a href="#">How Gen Z Is Changing the Workplace</a></li>
+          <li><a href="#">5 Ways to Protect Your Privacy Online</a></li>
+        </ul>
+      </div>
+
+      <div class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Stay informed with the latest stories and updates.</p>
+        <form class="newsletter-form">
+          <input
+            type="text"
+            placeholder="Your name"
+            class="newsletter-input"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your email"
+            class="newsletter-input"
+            required
+          />
+          <select class="newsletter-select" required>
+            <option value="">Select your topic</option>
+            <option value="tech">Technology</option>
+            <option value="health">Health</option>
+            <option value="sports">Sports</option>
+            <option value="politics">Politics</option>
+          </select>
+          <textarea
+            class="newsletter-message"
+            placeholder="Anything you'd like to tell us?"
+          ></textarea>
+          <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
+      </div>
+    </aside>
+
+    <!-- ---category section--- -->
+
+    <section class="category-row">
+      <!-- World -->
+      <div class="category-box">
+        <h2 class="category-heading">World</h2>
+
+        <article class="category-article">
+          <img
+            class="zoom-hover"
+            src="images/su-san-lee-E_eWwM29wfU-unsplash.jpg"
+            alt="Japan"
+          />
+          <h3>Earthquake Hits Southern Japan</h3>
+          <p class="excerpt">Strong earthquake shakes homes and roads.</p>
+        </article>
+
+        <article class="category-article">
+          <img
+            class="zoom-hover"
+            src="images/jon-tyson-Eg7t0Bb3T6g-unsplash.jpg"
+            alt="Peace Deal"
+          />
+          <h3>New Peace Deal Signed in Africa</h3>
+          <p class="excerpt">Leaders agree to end long conflict.</p>
+        </article>
+      </div>
+
+      <!-- Politics -->
+      <div class="category-box">
+        <h2 class="category-heading">Politics</h2>
+
+        <article class="category-article">
+          <img
+            class="zoom-hover"
+            src="images/tingey-injury-law-firm-DZpc4UY8ZtY-unsplash.jpg"
+            alt="Election law"
+          />
+          <h3>New Election Laws Passed</h3>
+          <p class="excerpt">Voting rules changed for upcoming elections.</p>
+        </article>
+
+        <article class="category-article">
+          <img
+            class="zoom-hover"
+            src="images/saj-shafique-mIalf1tw6-w-unsplash.jpg"
+            alt="World leaders"
+          />
+          <h3>President Meets with World Leaders</h3>
+          <p class="excerpt">Leaders discussed trade, climate, and peace.</p>
+        </article>
+      </div>
+
+      <!-- Tech -->
+      <div class="category-box">
+        <h2 class="category-heading">Tech</h2>
+
+        <article class="category-article">
+          <img
+            class="zoom-hover"
+            src="images/emiliano-vittoriosi-fvxNerA8uk0-unsplash.jpg"
+            alt="Chat GPT"
+          />
+          <h3>New ChatGPT is Smarter</h3>
+          <p class="excerpt">ChatGPT now sees images and replies quicker.</p>
+        </article>
+
+        <article class="category-article">
+          <img
+            class="zoom-hover"
+            src="images/bagus-hernawan-A6JxK37IlPo-unsplash.jpg"
+            alt="iPhone"
+          />
+          <h3>Apple Adds Smart AI to iPhones</h3>
+          <p class="excerpt">
+            iPhones can now write, summarize, and understand images.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: Skynews123@outlook.com</p>
+          <p>Phone: (831) 456-7890</p>
+          <p>Address: 123 Broadway Blvd, NYC</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>
+            We're a modern news outlet covering the most important stories in
+            tech, health, and world events.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="#">Writing for the Web</a></li>
+            <li><a href="#">Journalism 101</a></li>
+            <li><a href="#">Photojournalism</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 News Magazine. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
